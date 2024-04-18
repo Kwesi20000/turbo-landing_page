@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo-Landing_Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+<div class="navbar">
+    <!-- Logo link -->
+    <div class="logo">
+        <h2><a href="/">Turbo</a></h2>
+    </div>
+    <!-- Navbar menu -->
+    <ul class="navbar-menu">
+      <!-- Home link -->
+      <li>
+        <a href="/" class="active">home</a>
+      </li>
+      <!-- Menu link -->
+      <li>
+        <a href="#explore-menu">menu</a>
+      </li>
+      <!-- Mobile App link -->
+      <li>
+        <a href="#app-download">mobile-App</a>
+      </li>
+      <!-- Contact Us link -->
+      <li>
+        <a href="#footer">contact-us</a>
+      </li>
+    </ul>
+    <!-- Navbar right section -->
+    <div class="navbar-right">
+      <!-- Search icon -->
+      <img src="photos/basket_icon.png" alt="Search Icon" />
+      <!-- Basket icon -->
+      <div class="navbar-search-icon">
+        <!-- Link to cart -->
+        <a href="/cart">
+          <img src="photos/search_icon.png" alt="Basket Icon" />
+        </a>
+        <!-- Dot to indicate items in cart -->
+        <div class="dot"></div>
+      </div>
+      <!-- Sign in button -->
+      <button>Sign in</button>
+    </div>
+  </div>
+  
+<!-- Header -->
+<div class="header"> <!-- Main header container -->
+    <div class="header-content"> <!-- Content within the header -->
+        <h2>Order your favourite food here</h2> <!-- Main heading -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum molestias, unde quasi ipsa magnam necessitatibus veritatis architecto. Consequuntur, sunt totam. Perspiciatis necessitatibus iste sit nulla excepturi, ratione nobis eos!</p> <!-- Paragraph -->
+        <button>View Menu</button> <!-- Button to view menu -->
+    </div>
+</div>
+
+<!-- HTML template for the ExploreMenu component -->
+<div class="explore-menu" id="explore-menu">
+  <h1>Explore our menu</h1>
+  <p class="explore-menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque nulla, veniam possimus architecto harum molestiae natus quisquam, in id, nemo necessitatibus sunt ullam animi quos laboriosam atque. Laboriosam, necessitatibus!</p>
+  <div class="explore-menu-list" id="menu-list">
+      <!-- Dynamic menu items will be inserted here -->
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_1.png' alt='' />
+        <!-- Menu name -->
+        <p>Salad</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_2.png' alt='' />
+        <!-- Menu name -->
+        <p>Rolls</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_3.png' alt='' />
+        <!-- Menu name -->
+        <p>Desert</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_4.png' alt='' />
+        <!-- Menu name -->
+        <p>Sandwich</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_5.png' alt='' />
+        <!-- Menu name -->
+        <p>Cake</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_6.png' alt='' />
+        <!-- Menu name -->
+        <p>Pure Veg</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_7.png' alt='' />
+        <!-- Menu name -->
+        <p>Pasta</p>
+    </div>
+      <div class='explore-menu-list-item'>
+        <!-- Menu image -->
+        <img src='photos/menu_8.png' alt='' />
+        <!-- Menu name -->
+        <p>Noodles</p>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- Food Display -->
+<div class="food-display" id="food-display">
+  <h2>Top dishes near you</h2>
+  <div class="food-display-list">
+      <!-- Template for a food item -->
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_1.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Greek Salad</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_2.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Veg Salad</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$18</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_3.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Clover Salad</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$16</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_4.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Chicken Salad</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$24</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_4.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Lasagna Rolls</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$14</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_4.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Peri Peri Rolls</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_7.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Chicken Rolls</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$20</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_8.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Veg Rolls</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$15</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_9.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Ripple Ice Cream</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$14</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_10.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Fruit Ice Cream</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$22</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_11.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Jar Ice Cream</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$10</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_12.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Vanilla Ice Cream</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_13.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Chicken Sandwich</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_14.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Vegan Sandwich</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$18</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_15.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Grilled Sandwich</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$16</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_16.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Bread Sandwich</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$24</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_17.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Cup Cake</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$14</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_18.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Vegan Cake</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_19.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Butterscotch Cake</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$20</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_20.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Sliced Cake</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$15</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_21.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Garlic Mushroom</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$15</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_22.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Fried Cauliflower</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$22</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_23.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Mix Veg Pulao</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$10</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_24.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Rice Zucchini</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_25.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Cheese Pasta</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_26.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Tomato Pasta</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$18</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_27.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Creamy Pasta</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$16</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_28.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Chicken Pasta</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$24</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_29.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Buttter Noodles</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$14</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_30.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Veg Noodles</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$12</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_31.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Somen Noodles</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$20</p>
+          </div>
+      </div>
+      <div class="food-item">
+          <img class="food-item-image" src="photos/food_32.png" alt="Food Image">
+          <div class="food-item-details">
+              <h3 class="food-item-name">Cooked Noodles</h3>
+              <p class="food-item-description">Food provides essential nutrients for overall health and well-being</p>
+              <p class="food-item-price">$15</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--App download-->
+<div class="app-download" id="app-download">
+  <!-- Heading for app download -->
+  <p>For Better Experience Download <br />Turbo App</p>
+  <!-- Container for app download platforms -->
+  <div class="app-download-platforms">
+      <!-- Image for Google Play Store -->
+      <img src="photos/play_store.png" alt="Google Play Store" />
+      <!-- Image for Apple App Store -->
+      <img src="photos/app_store.png" alt="Apple App Store" />
+  </div>
+</div>
+
+<!--Footer-->
+<div class="footer" id="footer">
+  <div class="footer-content">
+    <!-- Left section of the footer -->
+    <div class="footer-content-left">
+      <h2>Turbo</h2>
+      <p>
+        <!-- Footer description -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores quam. Blanditiis aliquam, cupiditate minima fuga optio corrupti voluptatum tempora ratione eum tempore repellat quos error possimus esse fugit pariatur.
+      </p>
+      <!-- Social media icons -->
+      <div class="footer-social-icons">
+        <img src="path/to/facebook_icon.png" alt="" />
+        <img src="path/to/twitter_icon.png" alt="" />
+        <img src="path/to/linkedin_icon.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Center section of the footer -->
+    <div class="footer-content-center">
+      <h2>COMPANY</h2>
+      <ul>
+        <!-- Footer navigation links -->
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Delivery</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <!-- Right section of the footer -->
+    <div class="footer-content-right">
+      <h2>GET IN TOUCH</h2>
+      <ul>
+        <!-- Contact information -->
+        <li>+233-54-247-585</li>
+        <li>contact@turbo.com</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Horizontal line -->
+  <hr />
+  <!-- Copyright information -->
+  <p class="footer-copyright">
+    Copyright 2024 Turbo.com - All Rights Reserved.
+  </p>
+</div>
+
+
+  
+</body>
+</html>

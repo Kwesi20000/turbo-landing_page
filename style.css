@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Reset styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar { 
+    padding: 20px 70px; /* Padding for the navbar */
+    display: flex; /* Display as flexbox */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center align items vertically */
+    margin: 0px 80px;
+}
+
+/* Logo styling */
+.navbar .logo a{
+    color: tomato;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+/* Navbar menu styling */
+.navbar-menu {
+    display: flex; /* Display as flexbox */
+    list-style: none; /* Remove default list styling */
+    gap: 20px; /* Gap between menu items */
+    color: #49557e; /* Text color */
+    font-size: 18px; /* Font size */
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+}
+
+/* Navbar right section styling */
+.navbar-right {
+    display: flex; /* Display as flexbox */
+    align-items: center; /* Center align items vertically */
+    gap: 40px; /* Gap between items */
+}
+
+/* Sign in button styling */
+.navbar button {
+    background: transparent; /* Transparent background */
+    font-size: 16px; /* Font size */
+    color: #49557e; /* Text color */
+    border: 1px solid tomato; /* Border */
+    padding: 10px 30px; /* Padding */
+    border-radius: 50px; /* Border radius */
+    cursor: pointer; /* Cursor pointer */
+    transition: 0.3s; /* Transition */
+}
+
+/* Sign in button hover effect */
+.navbar button:hover {
+    background-color: #fff4f2; /* Background color on hover */
+}
+
+/* Active menu item styling */
+.navbar .active {
+    padding-bottom: 2px; /* Bottom padding */
+    border-bottom: 2px solid #49557e; /* Border bottom */
+}
+
+/* Menu item cursor pointer */
+.navbar li {
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Dot styling for indicating items in cart */
+.navbar-search-icon .dot {
+    position: absolute; /* Absolute position */
+    min-width: 10px; /* Minimum width */
+    min-height: 10px; /* Minimum height */
+    background-color: tomato; /* Background color */
+    border-radius: 5px; /* Border radius */
+    top: -8px; /* Top position */
+    right: -8px; /* Right position */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px; /* Adjusted width for smaller screens */
+    }
+    .navbar-menu {
+        gap: 20px; /* Adjusted gap between menu items */
+        font-size: 17px; /* Adjusted font size */
+    }
+    .navbar-right {
+        gap: 30px; /* Adjusted gap between items */
+    }
+    .navbar-right img {
+        width: 22px; /* Adjusted width for images */
+    }
+    .navbar-right button {
+        padding: 8px 25px; /* Adjusted padding for button */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none; /* Hide navbar menu */
+    }
+}
+
+
+/* Styling for the main header container */ 
+.header{
+    height: 34vw; /* Set the height of the header */
+    margin: 30px 150px; /* Center the header horizontally with top and bottom margins */
+    background: url('photos/header_img.png') no-repeat; /* Set background image */
+    background-size: contain; /* Ensure the background image fits within the container */
+    position: relative; /* Positioning context for absolute positioning of child elements */
+}
+
+/* Styling for the content within the header */
+.header-content{
+    position: absolute; /* Position content absolutely within the header */
+    display: flex; /* Display content as a flex container */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: start; /* Align content to the start of the container */
+    gap: 1.5vw; /* Set the gap between child elements */
+    max-width: 50%; /* Limit the maximum width of the content */
+    bottom: 10%; /* Position content 10% from the bottom */
+    left: 6vw; /* Position content 6% from the left */
+    animation: fadeIn 3s; /* Apply fadeIn animation with a duration of 3 seconds */
+}
+
+/* Styling for the heading within the header */
+.header-content h2{
+    font-weight: 500; /* Set font weight to bold */
+    color: white; /* Set text color to white */
+    font-size: max(4.5vw,22px); /* Set font size based on viewport width */
+}
+
+/* Styling for the paragraph within the header */
+.header-content p{
+    color: white; /* Set text color to white */
+    font-size: 1vw; /* Set font size based on viewport width */
+}
+
+/* Styling for the button within the header */
+.header-content button{
+    border: none; /* Remove border */
+    color: #747474; /* Set text color */
+    font-weight: 500; /* Set font weight */
+    padding: 1vw 2.3vw; /* Set padding */
+    background-color: white; /* Set background color */
+    font-size: max(1vw,13px); /* Set font size based on viewport width */
+    border-radius: 50px; /* Add border radius */
+    cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width:1050px){
+    .header-content{
+        max-width: 45%; /* Adjust maximum width */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width:750px){
+    .header-content{
+        max-width: 65%; /* Adjust maximum width */
+    }
+
+    .header-content p{
+        display: none; /* Hide paragraph */
+    }
+
+    .header-content button{
+        padding: 2vw 4vw; /* Adjust button padding */
+    }
+}
+
+/* ExploreMenu styles */
+
+/* ExploreMenu container */
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Gap between elements */
+    margin: 0px 150px;
+}
+
+/* ExploreMenu heading */
+.explore-menu h1 {
+    color: #262626; /* Heading color */
+    font-weight: 500; /* Heading font weight */
+}
+
+/* ExploreMenu text */
+.explore-menu-text {
+    max-width: 60%; /* Maximum width of text */
+    columns: #808080; /* Text color */
+}
+
+/* ExploreMenu list */
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between; /* Space between list items */
+    align-items: center;
+    gap: 30px; /* Gap between list items */
+    text-align: center; /* Center-align text */
+    margin: 20px 0px; /* Margin */
+    overflow-x: scroll; /* Horizontal scroll for overflow */
+}
+
+/* Hide scrollbar */
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* ExploreMenu list item image */
+.explore-menu-list-item img {
+    width: 7.5vw; /* Image width */
+    min-width: 80px; /* Minimum image width */
+    cursor: pointer; /* Cursor style */
+    border-radius: 50%; /* Border radius */
+    transition: 0.2s; /* Transition effect */
+}
+
+/* ExploreMenu list item text */
+.explore-menu-list-item p {
+    margin-top: 10px; /* Top margin */
+    color: #747474; /* Text color */
+    font-size: max(1.4vw, 16px); /* Font size */
+    cursor: pointer; /* Cursor style */
+}
+
+/* ExploreMenu horizontal rule */
+.explore-menu hr {
+    margin: 10px 0px; /* Margin */
+    height: 2px; /* Height */
+    background-color: #e2e2e2; /* Background color */
+    border: none; /* No border */
+}
+
+/* Active state for ExploreMenu list item */
+.explore-menu-list-item .active {
+    border: 4px solid tomato; /* Border style */
+    padding: 2px; /* Padding */
+}
+
+/* Media query for smaller screens */
+@media (max-width:1050px) {
+    .explore-menu-text {
+        max-width: 100%; /* Maximum width of text */
+        font-size: 14px; /* Font size */
+    }
+}
+
+/* Food Display Styles */
+.food-display {
+    margin: 30px 100px 0px; /* Maintain margin at the top of the food display */
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px); /* Maintain font size of the heading with a minimum of 24px */
+    font-weight: 600; /* Maintain font weight of the heading to 600 (semi-bold) */
+}
+
+.food-display-list {
+    display: grid; /* Use CSS Grid layout for the food display list */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Maintain grid columns with a minimum width of 240px and maximum width of 1fr */
+    margin-top: 30px; /* Maintain margin at the top of the food display list */
+    gap: 30px; /* Maintain the gap between grid items */
+    row-gap: 60px; /* Maintain the vertical gap between grid rows */
+}
+
+.food-item {
+    border: 1px solid #ccc; /* Add border to each food item */
+    padding: 20px; /* Add padding to each food item */
+    border-radius: 8px; /* Add border radius to each food item */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow to each food item */
+}
+
+.food-item-image {
+    width: 100%; /* Ensure food item images take up full width */
+    border-radius: 8px; /* Add border radius to food item images */
+}
+
+.food-item-details {
+    padding-top: 10px; /* Add padding to the top of food item details */
+}
+
+.food-item-name {
+    font-size: 18px; /* Set font size of food item name */
+    font-weight: 600; /* Set font weight of food item name */
+}
+
+.food-item-description {
+    font-size: 14px; /* Set font size of food item description */
+    color: #666; /* Set color of food item description */
+    margin-top: 10px;
+}
+
+.food-item-price {
+    font-size: 16px; /* Set font size of food item price */
+    font-weight: 600; /* Set font weight of food item price */
+    color: tomato; /* Set color of food item price */
+    margin-top: 10px;
+}
+
+/* App download */
+/* Styling for the app-download container */
+.app-download {
+    margin: auto auto; /* Centering the container horizontally */
+    margin-top: 100px; /* Adding top margin */
+    font-size: max(3vw, 20px); /* Responsive font size */
+    text-align: center; /* Aligning text to the center */
+    font-weight: 500; /* Setting font weight */
+}
+
+/* Styling for the app-download-platforms container */
+.app-download-platforms {
+    display: flex; /* Setting display to flex for horizontal alignment */
+    justify-content: center; /* Centering the items horizontally */
+    gap: max(2vw, 10px); /* Adding gap between items with a minimum value */
+    margin-top: 40px; /* Adding top margin */
+}
+
+/* Styling for app-download-platforms images */
+.app-download-platforms img {
+    width: max(30vw, 120px); /* Responsive width */
+    max-width: 180px; /* Maximum width for larger screens */
+    transition: 0.5s; /* Adding transition effect */
+    cursor: pointer; /* Setting cursor to pointer */
+}
+
+/* Hover effect for app-download-platforms images */
+.app-download-platforms img:hover {
+    transform: scale(1.05); /* Increasing scale on hover */
+}
+
+/* Footer container */
+.footer{
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px; /* Top padding */ 
+    margin-top: 100px; /* Top margin */
+}
+
+/* Footer content container */
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Grid layout for different sections */
+    gap: 80px;
+}
+
+/* Styling for each section of the footer */
+.footer-content-left, .footer-content-right, .footer-content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+/* Styling for list items in each section */
+.footer-content-left li, .footer-content-right li, .footer-content-center li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-content-left h2{
+    color: tomato;
+    font-size: 32px;
+}
+
+/* Styling for headings in right and center sections */
+.footer-content-right h2, .footer-content-center h2{
+    color: white;
+}
+
+/* Styling for social media icons */
+.footer-social-icons img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+/* Horizontal line */
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: grey;
+    border: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width:750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-coprright{ /* Typo: should be .footer-copyright */
+        text-align: center; /* Center align copyright text */
+    }
+}
