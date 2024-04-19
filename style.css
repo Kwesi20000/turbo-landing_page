@@ -315,6 +315,58 @@ body {
     margin-top: 10px;
 }
 
+/* About section */
+.about {
+    margin: 30px 100px 0px;
+}
+
+.about h2{
+    font-size: max(2vw, 24px); /* Maintain font size of the heading with a minimum of 24px */
+    font-weight: 600; /* Maintain font weight of the heading to 600 (semi-bold) */
+}
+
+.about p{
+    font-size: 18px;
+    align-items: center;
+    line-height: calc(1em + 0.5rem);
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.about ul{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+
+.about ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.about ul li a{
+    text-decoration: none;
+    color: #262626;
+    transition: 0.3s;
+}
+
+.about a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+    transition: 0.3s;
+}
+
+.about ul li a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.about a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+
+
 /* App download */
 /* Styling for the app-download container */
 .app-download {
